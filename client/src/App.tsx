@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UrlShortenerComponent from './components/UrlShortener';
 import AdminComponent from './components/Admin';
-import RedirectComponent from './components/Redirect';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +9,6 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<UrlShortenerComponent />} />
         <Route path="/admin" element={<AdminComponent />} />
-        <Route path="/:shortUrl" element={<RedirectComponent />} />
       </Routes>
     </Router>
   );
